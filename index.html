@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizveera</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
+    <link rel="stylesheet" media="screen and (max-width: 839px)" href="responsive/home.css">
+    
+</head>
+<body>
+    <nav id="navbar">
+        <ul>
+            <div><span class="material-symbols-outlined  home">
+                home
+                </span></div>
+            <li><a href="" id="active">Home</a></li>
+            <li><a href="start.html" id="start">Start Quiz</a></li>
+            <li><a href="build.html" id="build" onclick="active()">Build Quiz</a></li>
+            <li><a href="score.html" id="score">Your score</a></li>
+            <li><a href="#login" id="log">Login</a></li>
+            <li><a href="help.html" id="help">Help?</a></li>
+        </ul>
+    </nav>
+
+    <section id="main">
+        <div id="heading">
+            <h1>Quizveera</h1>
+            <P>A quiz app for the students, helping them to practice their knowledge in a particular Subject/Topic.</P>
+            <h2>Why Quizveera?</h2>
+            <p>A simple user freindly web-app for students/teachers which can easily generate a quiz under minutes by placing questions and answers in it by the host and this quiz can be easily given by the students. </p>
+            <button><a href="#login">Get Started</a></button>
+
+        </div>
+
+        <div id="photo">
+            <img src="images/4119036.jpg" alt="">
+        </div>
+
+    </section>
+
+    <section id="login">
+        <div id="ap">
+            <img src="images/Mobile-login-Cristina.jpg" alt="">
+        </div>
+        <div id="card">
+            <div id="host">
+                <h2>login as</h2>
+                <button class="but" id="student">Student</button>
+                <button class="but" id="admin">Admin</button>
+            </div>
+            <div>
+
+                <h5>Your name</h5>
+                <input type="text" placeholder="Username" id="user" class="inp">
+            </div>
+            <div>
+                <h5>Email</h5>
+                <input type="email" placeholder="Email" id="mail" class="inp">
+            </div>
+
+                <div id="lock">
+                <h5>Enter quiz code</h5>
+                <input type="text" placeholder="Enter Quiz Code" id="code" class="inp">
+            </div>
+                <button id="submit">Login</button>
+        </div>
+    </section>
+
+
+    <footer>
+        
+
+            <center>
+                <div class="center">
+                    Copyright &copy; 2023 Quizveera | All rights reserved! <br>
+                    Made with <span style="color: #e25555">❤</span> by <a style="color: #2F0F5D;" href="https://github.com/Vidittamrakar21">Vidit Tamrakar.</a>.
+                </div>
+            </center>
+        
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

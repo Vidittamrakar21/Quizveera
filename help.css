@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Candal&display=swap');
+  
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+/*navbar styling*/
+
+#navbar{
+  width: 100%;
+  height: 50px;
+  font-family: 'Candal', sans-serif;
+  background-color: #00FFCA;
+}
+
+#navbar ul{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+#navbar ul li{
+  margin-top: 18px;
+  margin-left: 10px;
+  list-style-type: none;
+}
+
+#navbar ul li a{
+  margin-left: 19px;
+  text-decoration: none;
+  color: #0A4D68;
+}
+
+#navbar ul li a:hover{
+
+  color: #2F0F5D;
+  text-decoration: underline;
+}
+
+#navbar #live{
+    color: #2F0F5D;
+    text-decoration: underline;
+    
+}
+
+
+
+.home{
+  margin-top: 19px;
+  margin-right: -25px;
+  color: #0A4D68;
+}
+
+/*footer styling*/
+footer{
+    
+    height: 100px;
+    background-color: #A0E4CB;
+}
+
+footer .center{
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    top: 20px;
+    font-size: 21px;
+}
+
+footer a{
+    font-weight: bolder;
+    
+}
+
+h1{
+    font-size: 45px;
+    margin-top: 30px;
+    color: #0A4D68;
+}
+
+#page{
+    height: 1000px;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+#free{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  
+}
+
+#teach{
+  margin-left: 350px;
+  margin-top: 20px;
+}
+
+h2{
+  margin-top: 15px;
+}
+
+#mentor{
+  position: relative;
+  right: 300px;
+}
+
+span{
+  color: #530ab8;
+  font-weight: bolder;
+}
+
+#stud{
+  margin-top: 20px;
+}
+
+h3{
+  margin-top: 15px;
+}
+
+#contact{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#contact li {
+  
+  margin-top: 20px;
+  list-style-type: none;
+}
+#contact li a{
+  color: #0A4D68;
+  font-weight: bolder;
+  list-style-type: none;
+  text-decoration: none;
+  margin-left: 15px;
+}
+
+#contact li a:hover{
+  color: #106789;
+  cursor: pointer;
+}
