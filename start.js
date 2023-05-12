@@ -54,7 +54,7 @@ function enter(){
     
     if(codevalue === num){
         
-        
+       
         
         
         box.innerHTML = `   <h2 id="num">Question 1</h2>  
@@ -83,6 +83,34 @@ function enter(){
             
             
         }
+
+        else if(codevalue === "1180"){
+
+            box.innerHTML = `   <h2 id="num">Question 1</h2>  
+                
+        
+        
+            <input type="text" class="box" id="ques" readonly>
+            <input type="text" class="box" id="optA" readonly value="A." onclick="checkA()">
+            <input type="text" class="box" id="optB" readonly value="B." onclick="checkB()">
+            <input type="text" class="box" id="optC" readonly value="C." onclick="checkC()">
+            <input type="text" class="box" id="optD" readonly value="D." onclick="checkD()">
+            
+            <button id="next" onclick="next()">Next</button> `
+                
+                
+                
+                
+            stop.innerHTML = `<h3 id="left">Total Time Left :</h3>`    
+            
+            user.textContent = student.username;
+            
+                common();
+                write();
+                console.log("inside enter");
+                insert();
+
+        }
         
         else{
             alert("Invalid Quiz Code ! make sure that you have logged in correctly")
@@ -91,9 +119,10 @@ function enter(){
         
     }
     
+
+        let data = JSON.parse(localStorage.getItem("maindata"));
+        console.log(data[0].ob.qustion1);
     
-    let data = JSON.parse(localStorage.getItem("maindata"));
-    console.log(data[0].ob.qustion1);
     function write(){
         let ques = document.getElementById("ques");
         let optA = document.getElementById("optA");
@@ -389,6 +418,79 @@ let race = 0;
 }
 
 
+
+
+// for default quiz//
+
+
+
+function common(){
+   
+    const comdata = [ {ob:
+
+        {  
+            question: "Not a name of a river in India",
+            A: "Krishna",
+            B: "Narmada",
+            C: "Ganga",
+            D: "Varsha",
+            right: "Varsha"
+        }
+    },
+    
+    {ob:
+        {  
+            question: "Total Number of Union Territories of India",
+        A: "5",
+        B: "7",
+        C: "8",
+        D: "9",
+        right: "8"
+    }
+},
+    {ob:
+        {  
+            question: "Bhedaghat-Dhuandhar,one of the biggest waterfall in India is situated in ",
+        A: "Shimoga,Karnataka",
+        B: "Jabalpur,MadhayaPradesh",
+        C: "Khasi hills,Meghalaya",
+        D: "Mayurbhanj district, Odisha",
+        right: "Jabalpur,MadhayaPradesh"
+    }
+},
+    {ob:
+        {  
+            question: "Largest State of India",
+        A: "Madhya Pradesh",
+        B: "Rajasthan",
+        C: "Maharashtra",
+        D: "Telangana",
+        right: "Rajasthan"
+    }
+},
+    {ob:
+        {  
+            question: "known as the Father of the Indian Constitution",
+        A: "Jawaharlal Nehru",
+        B: "Mahatma Gandhi",
+        C: "Dr. BR Ambedkar",
+        D: "none of the above",
+        right: "Dr. BR Ambedkar"
+    }
+}
+
+
+    ]
+
+
+    
+    let mydata = JSON.stringify(comdata);
+    
+    localStorage.setItem("maindata",mydata);
+
+    
+    
+}
 
 
 
