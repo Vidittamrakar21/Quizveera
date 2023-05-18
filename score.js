@@ -19,7 +19,7 @@ function fire(){
 
         box.innerHTML = `<div id="score">
         <h1>Your Score</h1>
-        <p id="date">${din}/${mahina}/${sal}</p>
+        <p id="date">${din}/${mahina + 1}/${sal}</p>
         <hr>
         <h1 id="point"> ${correct} / 5</h1> 
         <h2 id="yes">${correct} correct</h2>
