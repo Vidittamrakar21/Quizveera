@@ -5,10 +5,10 @@ let stop = document.getElementById("stop");
 let card = document.getElementById("score");
 
 
-function insert(){
+function insert(x){
 
     let left = document.getElementById("left");
-    let i = 80;
+    let i = x;
 
     const sec = () =>{
         
@@ -77,7 +77,7 @@ function enter(){
             user.textContent = student.username;
             write();
             console.log("inside enter");
-            insert();
+            insert(80);
             
             
             
@@ -108,7 +108,7 @@ function enter(){
                 common();
                 write();
                 console.log("inside enter");
-                insert();
+                insert(80);
 
         }
         
@@ -332,7 +332,7 @@ function enter(){
 let count = 0;
 let iter = 1;
 let race = 0;
-
+let alone = 1;
     function next(){
 
     if(iter <=3){
@@ -348,6 +348,7 @@ let race = 0;
         
         count++;
         iter++;
+        alone++;
         ckd = 0;
         write();
     }
@@ -364,6 +365,7 @@ let race = 0;
         
         count++;
         iter++;
+        alone++;
         ckd = 0;
         write();
     }
@@ -377,11 +379,14 @@ let race = 0;
         <h1 id="point">${correct} / 5</h1> 
         <h2 id="yes">${correct} correct</h2>
         <h2 id="no">${incorrect} incorrect</h2>
-     </div>`
+        </div>`
+        /* <h2 id="alone">${alone-(correct+incorrect)} left unchecked</h2> */
+        // fit this above feat in the running program
 
         race = 1;
-        
-       
+        console.log("left = ",alone-(correct+incorrect));
+        stop.innerHTML = `<h3 id="left">Total Time Left : 0 sec</h3>`
+
      let given = document.getElementById("dat");
 
      let d = new Date();
